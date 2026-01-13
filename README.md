@@ -91,7 +91,7 @@ Response:
 
 How to run
 1. Clone the repository
-git clone <your-github-repo>
+git clone https://github.com/DeepeshSherawat04/teleport-smartload.git
 cd smartload
 
 2. Start the service
@@ -100,18 +100,18 @@ docker compose up --build
 
 The service will be available at:
 
-http://localhost:8081
+http://localhost:8080
 
 🔍 Verify
 
 Health check:
 
-curl http://localhost:8081/healthz
+curl http://localhost:8080/healthz
 
 
 Run optimizer:
 
-curl -X POST http://localhost:8081/api/v1/load-optimizer/optimize \
+curl -X POST http://localhost:8080/api/v1/load-optimizer/optimize \
   -H "Content-Type: application/json" \
   -d @sample-request.json
 
